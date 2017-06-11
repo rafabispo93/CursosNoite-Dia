@@ -46,3 +46,12 @@ body{
 .footer footer{
     position: relative;
 }
+
+.cursos-item > .row{
+    margin-bottom: 10px;
+    color: #1651B8;
+}
+
+.txt-right{
+    text-align: right;
+}
