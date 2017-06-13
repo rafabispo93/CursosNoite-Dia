@@ -9,7 +9,20 @@
  }
 
 /* Toggle Styles */
-
+summary {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+summary:hover{
+  background-color: #337ab7;
+}
+.copyright {
+    text-align: center;
+}
+.userButtons {
+    position: fixed;
+    right: 20px;
+}
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
