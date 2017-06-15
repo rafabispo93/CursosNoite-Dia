@@ -101,6 +101,7 @@
                           </div>
                           <div class="row">
                               <div class="col-sm-4 cursos-item">
+                                    <h4>Design</h4>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <img src="img/cursos/c1.jpg" class="img-responsive" alt="Cabin">
@@ -116,6 +117,7 @@
                                   </div>
                               </div>
                               <div class="col-sm-4 cursos-item">
+                                    <h4>Artes</h4>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <img src="img/cursos/c2.jpg" class="img-responsive" alt="Slice of cake">
@@ -131,6 +133,7 @@
                                   </div>
                               </div>
                               <div class="col-sm-4 cursos-item">
+                                    <h4>Planejamento Estratégico</h4>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <img src="img/cursos/c3.jpg" class="img-responsive" alt="Circus tent">
@@ -148,6 +151,7 @@
                           </div>
                           <div class="row">
                               <div class="col-sm-4 cursos-item">
+                                    <h4>Excel Avançado</h4>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <img src="img/cursos/c4.jpg" class="img-responsive" alt="Game controller">
@@ -163,6 +167,7 @@
                                   </div>
                               </div>
                               <div class="col-sm-4 cursos-item">
+                                    <h4>Metodologia de Estudo</h4>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <img src="img/cursos/c5.jpg" class="img-responsive" alt="Safe">
@@ -178,6 +183,7 @@
                                   </div>
                               </div>
                               <div class="col-sm-4 cursos-item">
+                                    <h4>Direito Tributário</h4>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <img src="img/cursos/c6.jpg" class="img-responsive" alt="Submarine">
@@ -228,6 +234,24 @@
             </footer>
         </div>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Descrição</h4>
+          </div>
+          <div class="modal-body">
+            <h3>Este é um curso para estudar ...........</h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            <!-- <button type="button" class="btn btn-primary">Matricule-se</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -236,14 +260,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main/main.js">
 
-    </script>
-
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
     </script>
 
 </body>

@@ -13,6 +13,10 @@ summary {
   transition: all 0.5s;
   cursor: pointer;
 }
+.cursos-item {
+  transition: all 0.5s;
+  cursor: pointer;
+}
 summary:hover{
   background-color: #337ab7;
 }
