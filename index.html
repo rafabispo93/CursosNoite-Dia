@@ -31,7 +31,7 @@
                     Cursos Noite & Dia
                 </a>
                 <ul class="nav navbar-nav navbar-right navbar-header userButtons">
-                  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Cadastre-se</a></li>
+                  <li><a href="#modalRegister"  data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Cadastre-se</a></li>
                   <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
             </div>
@@ -211,13 +211,20 @@
                 <div class="footer-above">
                     <div class="container">
                         <div class="row">
-                            <div class="footer-col col-md-8">
-                                <h3>Endereço</h3>
+                            <div class="footer-col">
+                              <span style="float: left;">
+                                <h4>Endereço</h4>
                                 <p>Salvador/Bahia - Brasil</p>
-                            </div>
-                            <div class="footer-col col-md-4">
-                                <h3>Sobre</h3>
+                              </span>
+                              <span style="float: right;">
+                                <h4>Sobre</h4>
                                 <p>Somos um site que propociona diversos cursos online.</p>
+                              </span>
+                            </div>
+                            <div class="footer-col col-md-12">
+
+                              <h5 class="text-center"><a href="#modalContact"  data-toggle="modal">Contato</a></h5>
+
                             </div>
                         </div>
                     </div>
@@ -250,6 +257,54 @@
             <!-- <button type="button" class="btn btn-primary">Matricule-se</button> -->
           </div>
         </div>
+      </div>
+    </div>
+
+    <div id="modalContact" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">Tire suas dúvidas com a gente!</h3>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal col-sm-12">
+              <div class="form-group"><label>Nome</label><input class="form-control required" placeholder="Seu Nome" data-placement="top" data-trigger="manual" data-content="Deve ser com no mínimo 3 letras, e somente letras." type="text"></div>
+              <div class="form-group"><label>Mensagem</label><textarea class="form-control" placeholder="Mensagem.." data-placement="top" data-trigger="manual"></textarea></div>
+              <div class="form-group"><label>E-Mail</label><input class="form-control email" placeholder="email@you.com" data-placement="top" data-trigger="manual" data-content="Deve ser um e-mail válido (user@gmail.com)" type="text"></div>
+              <div class="form-group"><label>Telefone</label><input class="form-control phone" placeholder="999-999-9999" data-placement="top" data-trigger="manual" data-content="Deve ser um número de telefone válido (999-999-9999)" type="text"></div>
+              <div class="form-group"><button type="submit" class="btn btn-success pull-right">Enviar!</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; Dados Inválidos. </p></div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <!-- <button class="btn" data-dismiss="modal" aria-hidden="true">Cancela</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modalRegister" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal col-sm-12">
+              <div class="form-group"><label>Nome</label><input class="form-control required" placeholder="Seu Nome" data-placement="top" data-trigger="manual" data-content="Deve ser com no mínimo 3 letras, e somente letras." type="text"></div>
+              <div class="form-group"><label>Usuário</label><input class="form-control required" placeholder="Usuário" data-placement="top" data-trigger="manual" type="text"></div>
+              <div class="form-group"><label>E-Mail</label><input class="form-control email" placeholder="email@you.com" data-placement="top" data-trigger="manual" data-content="Deve ser um e-mail válido (user@gmail.com)" type="text"></div>
+              <div class="form-group"><label>Telefone</label><input class="form-control phone" placeholder="999-999-9999" data-placement="top" data-trigger="manual" data-content="Deve ser um número de telefone válido (999-999-9999)" type="text"></div>
+              <div class="form-group"><label>Senha</label><input class="form-control required" placeholder="senha de 8 dígitos" data-placement="top" data-trigger="manual" type="text"></div>
+              <div class="form-group"><label>Confirme a Senha</label><input class="form-control required" placeholder="senha de 8 dígitos" data-placement="top" data-trigger="manual" type="text"></div>
+              <div class="form-group"><button type="submit" class="btn btn-success pull-right">Cadastrar!</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; Dados Inválidos. </p></div>
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <!-- <button class="btn" data-dismiss="modal" aria-hidden="true">Cancela</button> -->
+          </div>
+        </div>
+
       </div>
     </div>
 
