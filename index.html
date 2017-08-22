@@ -30,10 +30,21 @@
                 <a href="#" class="navbar-brand">
                     Cursos Noite & Dia
                 </a>
-                <ul class="nav navbar-nav navbar-right navbar-header userButtons">
-                  <li><a href="#modalRegister"  data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Cadastre-se</a></li>
-                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
+                <div class="dropdown nav navbar-nav navbar-right navbar-header userButtons">
+                  <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="glyphicon glyphicon-user"></span>Usuário
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a href="#modalRegister"  data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Cadastre-se</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                  </div>
+                </div>
+                <!-- <div class="user">
+                  <ul class="nav navbar-nav navbar-right navbar-header userButtons">
+                    <li><a href="#modalRegister"  data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Cadastre-se</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                  </ul>
+                </div> -->
             </div>
         </div>
         <div class="row">
@@ -215,10 +226,6 @@
                               <span style="float: left;">
                                 <h4>Endereço</h4>
                                 <p>Salvador/Bahia - Brasil</p>
-                              </span>
-                              <span style="float: right;">
-                                <h4>Sobre</h4>
-                                <p>Somos um site que propociona diversos cursos online.</p>
                               </span>
                             </div>
                             <div class="footer-col col-md-12">

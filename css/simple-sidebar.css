@@ -25,7 +25,9 @@ summary:hover{
 }
 .userButtons {
     position: fixed;
-    right: 20px;
+    top: 1%;
+    right: 2%;
+    z-index: 999;
 }
 #wrapper {
     padding-left: 0;
