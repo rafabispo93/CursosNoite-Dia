@@ -32,14 +32,36 @@ body{
     text-decoration: none;
 }
 
-.nav{
+.navbar-custom{
     background: #1651B8;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 0;
 }
 
-.nav > .navbar-header > a {
+.navbar-custom a {
     color: white;
 }
 
+.navbar-custom ul.navbar-nav li{
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+@media (max-width: 720px) {
+    .navbar-nav{
+        margin: 7.5px 0px;
+    }
+    .nav>li{
+        text-align: left;
+    }
+    .navbar-custom > .navbar-nav,
+    .navbar-custom > .navbar-nav > li,
+    .navbar-custom > .navbar-nav > li > button{
+        width: 100%;
+        text-align: center;
+    }
+}
 .content-page{
     background: white;
 }
