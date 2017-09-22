@@ -40,3 +40,9 @@ class Usuario(db.Model):
 
     def __repr__(self):
         return '<User %s>' % self.usuario
+
+class Curso(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    nome = db.Column(db.String)
+    carga_horaria = db.Column(db.Integer)
+    descricao = db.Column(db.String)
